@@ -1,0 +1,118 @@
+.frame {
+  width: 743px;
+  height: 91px;
+  border-radius: 10px;
+  background: #3579F5;
+  --progress: 60%;
+}
+
+.frame-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px 6px;
+}
+
+.text-checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.text-checklist-title {
+  width: 50px;
+  height: 18px;
+  padding: 0px 10px;
+  border-radius: 40px;
+  background: #2364DB;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.text-checklist-base {
+  height: 20px;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.text-checklist-small {
+  width: 389px;
+  height: 18px;
+  top: 58px;
+  left: 98px;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.ellipse-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.ellipse {
+  width: 100%;
+  height: 100%;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 50%;
+  z-index: 10;
+  position: absolute;
+}
+
+.ellipse-text {
+  opacity: 0px;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: cen;
+  color: #ffffff;
+  z-index: 200;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  background:
+    radial-gradient(closest-side, #3579F5 96%, #FFFFFF80 97%, #FFFFFF80 97% 100%),
+    conic-gradient(#ffffff var(--progress), transparent 0);    
+}
+
+.button-open {
+  width: 170px;
+  height: 40px;
+  padding: 10px 32px;
+  gap: 10px;
+  border-radius: 6px;
+  background: #F4F8FF;
+  color: #3579F5;
+  border: none;
+  outline: none;
+  transition: .4s;
+}
+
+.button-open:hover {
+  outline: 2px solid #2364DB;
+  color: #2364DB;
+}
